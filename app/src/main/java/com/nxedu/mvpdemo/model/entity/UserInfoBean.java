@@ -1,5 +1,5 @@
 package com.nxedu.mvpdemo.model.entity;
-
+/*测试*/
 public class UserInfoBean {
 	
 	private String username;
