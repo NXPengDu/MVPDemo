@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.nxedu.mvpdemo.ui.activity.LoginActivity">
+
+    <com.lsjwzh.widget.materialloadingprogressbar.CircleProgressBar
+        android:id="@+id/activity_login_loading_progressBar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:mlpb_enable_circle_background="true"
+        app:mlpb_progress_color="@color/colorPrimary"
+        app:mlpb_progress_stoke_width="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <com.nxedu.mvpdemo.ui.view.ClearableEditText
+            android:id="@+id/activity_login_phone_edit"
+            android:layout_width="match_parent"
+            android:layout_height="68.57dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/login_user_hint"
+            android:inputType="number"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textColorHint"
+            android:textCursorDrawable="@null"
+            android:textSize="16.74sp"/>
+
+        <com.nxedu.mvpdemo.ui.view.ClearableEditText
+            android:id="@+id/activity_login_psd_edit"
+            android:layout_width="match_parent"
+            android:layout_height="68.57dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/login_user_psd_hint"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/textColorHint"
+            android:textCursorDrawable="@null"
+            android:textSize="16.74sp"/>
+
+     </LinearLayout>
+
+
+    <Button
+        android:id="@+id/activity_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="55.24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/login_button_selector"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="18.29sp"/>
+
+</RelativeLayout>
